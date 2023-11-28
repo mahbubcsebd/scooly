@@ -1,0 +1,813 @@
+.section {
+    padding: 100px 0;
+}
+
+.section-pt {
+    padding-top: 100px;
+}
+
+.section-pb {
+    padding-bottom: 100px;
+}
+
+/*=========================================================================================
+    Utility CSS End
+ ==========================================================================================*/
+/*=========================================================================================
+    Typography CSS Start
+ ==========================================================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Manrope', sans-serif;
+    color: #2f2d53;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    color: #433b3a;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*=========================================================================================
+    Typography CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Button CSS Start
+ ==========================================================================================*/
+.btn {
+    padding: 16px 30px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 40px;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.btnPrimary-outline {
+    color: #210b24;
+    background-color: transparent;
+    border: 1px solid #611f69;
+}
+
+.btnPrimary-outline:hover {
+    color: #ffffff;
+    background-color: #611f69;
+    border: 1px solid #611f69;
+}
+
+.btnPrimary {
+    color: #fff;
+    background-color: #611f69;
+    border: 1px solid #611f69;
+}
+
+.btnPrimary:hover {
+    color: #210b24;
+    background-color: transparent;
+    border: 1px solid #611f69;
+}
+/*=========================================================================================
+    Button CSS End
+ ==========================================================================================*/
+/*=========================================================================================
+    Global CSS Start
+ ==========================================================================================*/
+html,
+body {
+    background: #fff;
+}
+
+.body-1 {
+    background: #fff6f6;
+}
+
+.section {
+    padding-bottom: 100px;
+}
+
+.mobile-show {
+    display: none !important;
+}
+
+.mobile-lg-show {
+    display: none;
+}
+
+.column-2 {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.top-angle {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+/* Text Color */
+.text-orange {
+    color: #611f69 !important;
+}
+
+.bg-lightOrange {
+    background: #fff6f6 !important;
+}
+
+.bg-pink {
+    background: #ffefea;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+/* Slick Slider */
+.slider-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.slider-btn-box .slick-arrow {
+    background: #611f69;
+    box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.slider-btn-box .slick-arrow.slick-disabled {
+    background: #ffffff;
+    color: #000;
+    border: 1px solid #e8e7e6;
+}
+
+.slider-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 12px;
+}
+
+.single-testimonial-2 .slick-slider {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.slick-slide {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.slick-dots {
+    bottom: -40px !important;
+}
+
+.shop-p-filter.form-select {
+    border: 0;
+    background: transparent;
+    width: 70%;
+}
+
+.slick-dots li button:before {
+    font-size: 8px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #611f69;
+    font-size: 12px;
+}
+
+/* Scroll To Top */
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: red;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #611f69;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.client-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.client-text {
+    color: var(--gray-900, #020304);
+    font-size: 20px;
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.single-client-2 {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    cursor: pointer;
+}
+
+.statistics-title {
+    color: #ff5042;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.45px;
+    margin-bottom: 12px;
+}
+
+.statistics-icon {
+    margin-bottom: 24px;
+    height: 120px;
+}
+
+/*=========================================================================================
+    Global CSS End
+ ==========================================================================================*/
+/*=========================================================================================
+    Header CSS Start
+ ==========================================================================================*/
+.header {
+    background: transparent;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .navbar-expand-xl {
+    padding: 20px 0;
+}
+
+.header .navbar-expand-xl .navbar-nav {
+    gap: 32px;
+}
+
+.header .navbar-expand-xl .navbar-nav .nav-link {
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 26px;
+    color: #210b24;
+}
+
+.header .navbar-expand-xl .navbar-nav .active {
+    color: #611f69 !important;
+}
+
+.header .navbar-expand-xl .navbar-nav .dropdown-item {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 8px 12px;
+    margin-bottom: 2px;
+}
+
+.header .navbar-expand-xl .navbar-nav .dropdown-item:focus,
+.header .navbar-expand-xl .navbar-nav .dropdown-item:hover {
+    color: #fff !important;
+    background-color: #611f69 !important;
+}
+
+.header .navbar-expand-xl .navbar-nav .dropdown-item.active,
+.header .navbar-expand-xl .navbar-nav .dropdown-item:active {
+    background-color: #611f69 !important;
+    color: #fff !important;
+}
+
+.header .navbar-collapse {
+    flex-grow: inherit;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-login-btn,
+.header-register-btn {
+    padding: 12px 20px;
+}
+
+/*=========================================================================================
+    Header CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Footer CSS Start
+ ==========================================================================================*/
+.footer-area {
+    background: #fefbf9;
+}
+
+.footer-middle {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.footer-content {
+    max-width: 300px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-social li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease all;
+    font-size: 20px;
+    color: #210b24;
+    background: #fff;
+    border: 1px solid rgba(97, 31, 105, 0.2);
+}
+
+.footer-social li a:hover {
+    color: #fff;
+    background: #611f69;
+    border: 1px solid #611f69;
+}
+
+.footer-logo {
+    margin-bottom: 24px;
+}
+
+.footer-text {
+    color: #4d3849;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 24px;
+}
+
+.footer-menu .menu-category {
+    margin-bottom: 24px;
+    color: #210b24;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.footer-menu-list li a {
+    color: #4d3849;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.footer-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-menu p span {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.subscribe-form {
+    position: relative;
+}
+.subscribe-form input {
+    color: #4d3849 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 100% !important;
+    padding: 20px 24px !important;
+    border-radius: 48px !important;
+}
+
+.subscribe-form .btnPrimary {
+    position: absolute;
+    content: '';
+    border-radius: 48px;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.fm-margin {
+    margin-top: 50px;
+}
+
+.licenced-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-devider {
+    border-top: 1px solid #611f69;
+    position: relative;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.footer-copyright {
+    color: #4d3849;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+/*=========================================================================================
+    Footer CSS End
+ ==========================================================================================*/
+
+/* Banner Section Start */
+.banner-area {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fefbf9;
+}
+
+.banner-title {
+    color: #210b24;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 80px;
+}
+/* Banner Section End */
+
+/* Text Content Section Start */
+.st-title {
+    color: var(--color-text-title, #210b24);
+
+    /* Typography/Heading/H2-46px */
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 55.2px */
+    margin-bottom: 16px;
+}
+
+.st-text {
+    color: var(--color-text-paragraph, #4d3849);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.single-text-content {
+    margin-bottom: 48px;
+}
+
+.st-bullet-point {
+    display: flex;
+    gap: 10px;
+}
+
+.rounded-point {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #000;
+    margin-bottom: 3px;
+}
+/* Text Content Section End */
+
+/* Section Top Title Section Start */
+.section-top-title {
+    color: var(--color-text-title, #210b24);
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.section-top-text {
+    color: var(--color-text-paragraph, #4d3849);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-top: 16px;
+}
+
+.section-top-title-box {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+/* Section Top Title Section End */
+
+/* Career Table Section Start */
+.table-bg {
+    border-radius: 24px !important;
+    background: var(--color-bg-01, #fefbf9) !important;
+    padding: 24px 24px 0 24px !important;
+}
+
+.scooly-table {
+    padding: 0;
+}
+
+.scooly-table th {
+    color: var(--color-text-title, #210b24) !important;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    padding: 0 0 24px 0;
+}
+
+.scooly-table td {
+    color: var(--color-text-title, #210b24) !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    padding: 24px 0;
+}
+
+.career-btn {
+    text-align: right !important;
+    text-align: -webkit-right !important;
+}
+
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+}
+
+.table > tbody > tr:last-child td,
+.table > tbody > tr:last-child th {
+    border-bottom: 0 !important;
+}
+/* Career Table Section End */
+
+/* Table Section Start */
+.padding-from-top {
+    background: #feeadf;
+    padding-top: 185px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 98%);
+}
+
+.scooly-form {
+    padding: 40px;
+    border-radius: 24px;
+    background: #fff;
+}
+
+label {
+    color: var(--color-text-title, #210b24);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+
+.form-control {
+    padding: 16px 20px !important;
+    color: var(--color-text-paragraph, #4d3849) !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 100% !important;
+    border-radius: 8px !important;
+    background: rgba(97, 31, 105, 0.06) !important;
+}
+
+.submit-btn-box {
+    display: flex;
+    justify-content: end;
+    margin-top: 24px;
+}
+
+/* Table Section End */
+
+/* Upcomming Event Section Start */
+.single-upcoming-event {
+    height: 100%;
+}
+.sue-img {
+    height: 100%;
+}
+
+.sue-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.sue-centered {
+    border-radius: 24px;
+    background: var(--color-bg-02, #feeadf);
+    position: relative;
+    overflow: hidden;
+}
+
+.sue-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.sue-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+}
+
+.sue-title {
+    color: var(--color-text-title, #210b24);
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.sue-text {
+    color: var(--color-text-paragraph, #4d3849);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 20px;
+}
+
+.sue-time {
+    color: var(--color-text-title, #210b24);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+/* Upcomming Event Section End */
+
+/* Golbal Section Start */
+.section-purple {
+    color: #611f69;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 12px 32px;
+    border-radius: 40px;
+    border: 1px solid #611f69;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    color: var(--color-text-title, #210b24);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+.section-text {
+    color: var(--color-text-paragraph, #4d3849);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.ecosystem-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/* Golbal Section End */
