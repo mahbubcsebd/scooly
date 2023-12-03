@@ -147,12 +147,39 @@
         flex-direction: column;
     }
 
-    .st-title {
-        font-size: 36px;
+    .discipline-wrapper {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .partnership-img {
-        margin-top: 0;
+    .single-discipline {
+        padding: 24px;
+        border-right: 1px solid #ddd;
+    }
+
+    .single-discipline:nth-child(1),
+    .single-discipline:nth-child(4),
+    .single-discipline:nth-child(7),
+    .single-discipline:nth-child(10),
+    .single-discipline:nth-child(13) {
+        border-left: 0;
+    }
+
+    .single-discipline:nth-child(3),
+    .single-discipline:nth-child(6),
+    .single-discipline:nth-child(9),
+    .single-discipline:nth-child(12),
+    .single-discipline:nth-child(15) {
+        border-right: 0;
+    }
+
+    .single-discipline:nth-child(5),
+    .single-discipline:nth-child(10) {
+        border-right: 1px solid #ddd;
+    }
+
+    .single-discipline:nth-child(11),
+    .single-discipline:nth-child(12) {
+        border-bottom: 1px solid #ddd;
     }
 
     .wallet-lg .spw-content {
@@ -171,6 +198,25 @@
     .btn {
         padding: 14px 24px;
         font-size: 16px;
+    }
+
+    .section-top-title-box-between {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .discipline-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-discipline {
+        border: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .single-discipline:last-child {
+        border: 0;
+        border-bottom: 0;
     }
 
     .section-title {
@@ -226,6 +272,25 @@
 
     .spw-title {
         font-size: 24px;
+    }
+
+    .section-group-btn-box {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 0;
+        background: transparent;
+        align-items: self-start;
+        border-radius: 0;
+        overflow: auto;
+    }
+
+    .divider-line {
+        display: none;
+    }
+
+    .section-group-btn-box .dropdown {
+        padding: 0;
     }
 }
 @media screen and (max-width: 480px) {

@@ -111,8 +111,8 @@ li {
 }
 
 .btnPrimary-outline:hover {
-    color: #ffffff;
-    background-color: #611f69;
+    color: #210b24;
+    background-color: transparent;
     border: 1px solid #611f69;
 }
 
@@ -123,12 +123,18 @@ li {
 }
 
 .btnPrimary:hover {
-    color: #210b24;
-    background-color: transparent;
+    color: #fff;
+    background-color: #611f69;
     border: 1px solid #611f69;
 }
 
 .btnPrimary-light {
+    color: #611f69;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.btnPrimary-light:hover {
     color: #611f69;
     background-color: #fff;
     border: 1px solid #fff;
@@ -324,6 +330,16 @@ body {
     left: 0;
     width: 100%;
     z-index: 999;
+}
+
+.header.sticky {
+    position: sticky;
+    background: #fefbf9 !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header.sticky .navbar-expand-xl {
+    padding: 0;
 }
 
 .header .navbar-expand-xl {
@@ -1538,6 +1554,9 @@ h3.single-country-title {
      Payment Wallet Section End
   ----------------------------------------------------------------------------*/
 
+/*----------------------------------------------------------------------------
+    Global Section Start
+ ----------------------------------------------------------------------------*/
 .clip-bg-top {
     background: #feeadf;
     padding-top: 185px;
@@ -1546,7 +1565,7 @@ h3.single-country-title {
 
 .clip-path-y {
     background: #feeadf;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 98%);
 }
 
 .partnership-img {
@@ -1596,3 +1615,64 @@ h3.single-country-title {
     bottom: 100px;
     width: 360px !important;
 }
+
+.section-group-btn-box {
+    max-width: 600px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #feeadf;
+    border-radius: 40px;
+}
+
+.section-group-btn-box .btnPrimary {
+    height: 100%;
+}
+
+.section-group-btn-box .dropdown-toggle {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.section-group-btn-box .dropdown {
+    padding: 0 24px;
+}
+
+.divider-line {
+    width: 1px;
+    height: 56px;
+    opacity: 0.2;
+    background: #611f69;
+}
+
+.join-us {
+    margin-top: -27px;
+}
+
+/* Scroll To Top */
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #611f69;
+    color: #fff;
+    border-radius: 6px;
+}
+/*----------------------------------------------------------------------------
+    Global Section End
+ ----------------------------------------------------------------------------*/

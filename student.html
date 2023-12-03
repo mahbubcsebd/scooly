@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scooly | Home</title>
+    <title>Scooly | Student</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <!-- Manrope Google Font -->
@@ -23,10 +23,6 @@
     <!-- Slick Slider -->
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive CSS -->
@@ -39,12 +35,21 @@
     <!-- Header Section Start -->
     <header id="header" class="header header-1">
         <div class="container">
+            <div class="header-buttons d-xl-none justify-content-end">
+                <a href="#" class="btn btnPrimary-outline header-login-btn">Log In <span><i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></span></a>
+                <a href="#" class="btn btnPrimary header-register-btn">Register <span class="top-angle"><i
+                            class="fas fa-arrow-up"></i></span></a>
+            </div>
+        </div>
+        <hr class="d-xl-none">
+        <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-xl">
                     <div class="container-fluid">
                         <a class="navbar-brand header-logo" href="index.html">
                             <div class="">
-                                <img id="header-logo" src="assets/images/icons/logo.svg" alt="logo">
+                                <img id="header-logo" class="header-logo" src="assets/images/icons/logo.svg" alt="logo">
                             </div>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,18 +65,22 @@
                                         Scooly Platform
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
-                                        <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                                        <li><a class="dropdown-item active" href="about-us.html">About Us</a></li>
+                                        <li><a class="dropdown-item" href="multi-currency.html">Multi Currency</a></li>
+                                        <li><a class="dropdown-item" href="privacy.html">Privacy</a></li>
+                                        <li><a class="dropdown-item" href="terms.html">Terms and Conditions</a></li>
+                                        <li><a class="dropdown-item" href="visa-marketplace.html">Visa Marketplace</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">I Am Student</a>
+                                    <a class="nav-link" href="student.html">I Am Student</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="services.html">Schools</a>
+                                    <a class="nav-link" href="school.html">Schools</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Our Partners</a>
+                                    <a class="nav-link" href="partner.html">Our Partners</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,23 +100,51 @@
 
 
     <!-- Education Technology Section Start -->
-    <div id="education-technology" class="education-technology padding-from-top-2 section">
+    <div id="education-technology" class="education-technology padding-from-top-2 bg-pink-2 section">
         <div class="education-technology-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
                         <div class="section-content-box">
                             <p class="section-purple">Education Technology 🎓</p>
                             <h2 class="section-title">Find Your Dream Study</h2>
+                            <div class="section-content-img d-lg-none py-4">
+                                <img class="w-100" src="assets/images/student.png" alt="section img">
+                            </div>
                             <p class="section-text">Each year, we make a significant difference in the lives of
                                 thousands of students through our extensive platform,
                                 offering a holistic approach to exploring various study options.</p>
-                            <div class="section-group-btn-box">
-                                <img src="assets/images/search.png" alt="">
+
+                            <div class="section-group-btn-box mt-5">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        What to study?
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="divider-line"></div>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Where to study?
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btnPrimary">Search <span><i
+                                            class="fa-solid fa-magnifying-glass"></i></span></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-5 d-none d-lg-block">
                         <div class="section-content-img">
                             <img src="assets/images/student.png" alt="section img">
                         </div>
@@ -172,7 +209,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                         <div class="single-mission">
                             <div class="single-mission-icon">
-                                <img src="assets/images/icons/mission-1.svg" alt="mission">
+                                <img src="assets/images/icons/mission-4.svg" alt="mission">
                             </div>
                             <div class="single-mission-content">
                                 <h3 class="single-mission-title">Explore</h3>
@@ -353,7 +390,7 @@
 
 
     <!-- Upcoming Event Section Start -->
-    <div id="upcoming-event" class="upcoming-event section">
+    <div id="upcoming-event" class="upcoming-event section-pb">
         <div class="upcoming-event-area">
             <div class="container">
                 <div class="row">
@@ -400,7 +437,7 @@
 
 
     <!-- Ecosystem Section Start -->
-    <div id="ecosystem" class="ecosystem section">
+    <div id="ecosystem" class="ecosystem section-pb">
         <div class="ecosystem-area">
             <div class="container">
                 <div class="row">
@@ -423,7 +460,7 @@
 
 
     <!-- Social Media Section Start -->
-    <div id="social-media" class="social-media section">
+    <div id="social-media" class="social-media section-pb">
         <div class="social-media-area">
             <div class="container">
                 <div class="section-top-title-box-between">
@@ -461,12 +498,17 @@
 
 
 
+    <!-- Scroll To Top Start -->
+    <button id="scrollToTop" class="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Scroll To Top End -->
+
+
     <!-- Footer Section Start -->
     <footer id="footer" class="footer">
         <div class="footer-area">
             <div class="container">
                 <div class="row footer-middle">
-                    <div class="col-lg-5 mb-8">
+                    <div class="col-md-6 col-lg-6 col-xl-5 mb-5">
                         <div class="footer-content">
                             <div class="footer-logo">
                                 <img src="assets/images/icons/logo.svg" alt="logo">
@@ -495,20 +537,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xxl-3 mb-8">
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-5">
                         <div class="footer-menu">
                             <h2 class="menu-category">Menu</h2>
                             <ul class="footer-menu-list">
                                 <li><a href="#">Our Team</a></li>
                                 <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="career.html">Careers</a></li>
                                 <li><a href="#">Contact</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms & Condition</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xxl-4 mb-8">
+                    <div class="col-md-6 col-lg-6 col-xl-4 mb-5">
                         <div class="footer-menu">
                             <h2 class="menu-category">Subscribe for News and Updates</h2>
                             <div class="join-now-box">
@@ -553,8 +595,6 @@
     <!-- Font Awesome -->
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
-    <!-- AOS -->
-    <script src="assets/js/aos.js"></script>
     <!-- Main Script -->
     <script src="assets/js/main.js"></script>
 </body>
